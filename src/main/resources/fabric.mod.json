@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "anvilsound",
+    "version": "${version}",
+    "name": "Anvils Resounded",
+    "description": "",
+    "authors": ["JX_Snack"],
+    "contact": {
+        "repo": "https://github.com/snackbag-net/Anvils-Resounded"
+    },
+    "license": "MIT",
+    "icon": "assets/anvilsound/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "net.snackbag.anvils.anvilsound.client.AnvilsResoundedClient"
+        ],
+        "main": [
+            "net.snackbag.anvils.anvilsound.AnvilsResounded"
+        ]
+    },
+    "mixins": [
+        "anvilsound.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+        "minecraft": ">=${minecraft_version}"
+    }
+}
